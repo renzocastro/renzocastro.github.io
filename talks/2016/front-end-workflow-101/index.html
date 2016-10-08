@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Front End Workflow 101</title>
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme.black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style>
+			html img.img-clean {
+				background: none;
+				border: none;
+				box-shadow: none;
+			}
+		</style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Front End Workflow 101</h1>
+					<p><a href="https://fb.com/groups/frontendpe/" target="_blank">https://fb.com/groups/frontendpe/</a></p>
+				</section>
+				<section>
+					<h3>Renzo Castro Jurado</h3>
+					<p>Twitter: @renzocastrope</p>
+				</section>
+
+				<section>
+					<h2>IDE/Editor</h2>
+					<p class="fragment">- Atom</p>
+					<p class="fragment">- Brackets</p>
+					<p class="fragment">- SublimeText</p>
+					<p class="fragment">- Vim</p>
+					<p class="fragment">- WebStorm</p>
+				</section>
+
+				<section>
+					<h2>.editorconfig</h2>
+					<p><a href="http://editorconfig.org/">http://editorconfig.org/</a></p>
+					<img class="fragment" src="images/editorconfig.png" alt="Sintaxis">
+				</section>
+
+				<section>
+					<h2>Preprocesadores</h2>
+					<h2 class="fragment">HTML</h2>
+				</section>
+
+				<section>
+					<h3><del>Jade</del> Pug</h3>
+					<img class="img-clean" style="width: 400px; height: auto;" src="https://camo.githubusercontent.com/a43de8ca816e78b1c2666f7696f449b2eeddbeca/68747470733a2f2f63646e2e7261776769742e636f6d2f7075676a732f7075672d6c6f676f2f656563343336636565386664396431373236643738333963626539396431663639343639326330632f5356472f7075672d66696e616c2d6c6f676f2d5f2d636f6c6f75722d3132382e737667" alt="PUG LOGO">
+				</section>
+
+				<section>
+					<h3>Pug</h3>
+					<img src="images/pug-01.png" alt="">
+				</section>
+
+				<section>
+					<h2>Preprocesadores</h2>
+					<h2 class="fragment">CSS</h2>
+				</section>
+
+				<section>
+					<p class="fragment">LESS</p>
+					<p class="fragment">SASS</p>
+					<p class="fragment">STYLUS</p>
+				</section>
+
+				<section>
+					<h2>JavaScript</h2>
+					<p class="fragment">- JavaScript (Vanilla JS)</p>
+					<p class="fragment">- jQuery</p>
+					<p class="fragment"></p>
+					<p class="fragment">- BackboneJS</p>
+					<p class="fragment">- AngularJS</p>
+					<p class="fragment">- EmberJS</p>
+					<p class="fragment">- ReactJS</p>
+					<p class="fragment">- <strong>WhateverJS</strong></p>
+				</section>
+
+				<section>
+					<h2>Manejadores de Tareas</h2>
+				</section>
+
+				<section>
+					<p class="fragment">- Grunt</p>
+					<p class="fragment">- Gulp</p>
+					<p class="fragment">- NPM Scripts</p>
+					<p class="fragment">- Make</p>
+				</section>
+	
+				<section>
+					<h2>GIT: Control de Versiones</h2>
+					<h2 class="fragment">Gitflow</h2>
+				</section>
+
+				<section>
+					<h3>Ramas</h3>
+					<p class="fragment">- master</p>
+					<p class="fragment">- develop</p>
+					<p class="fragment">- feature/</p>
+					<p class="fragment">- bugfix/</p>
+					<p class="fragment">- release/</p>
+					<p class="fragment">- hotfix/</p>
+				</section>
+
+				<section>
+					<h1>Gracias</h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

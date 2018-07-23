@@ -1,1 +1,85 @@
-Renzo Castro Jurado
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Renzo Castro Jurado | Front-end Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/brands.css" integrity="sha384-SYNjKRRe+vDW0KSn/LrkhG++hqCLJg9ev1jIh8CHKuEA132pgAz+WofmKAhPpTR7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/fontawesome.css" integrity="sha384-0b7ERybvrT5RZyD80ojw6KNKz6nIAlgOKXIcJ0CV7A6Iia8yt2y1bBfLBOwoc9fQ" crossorigin="anonymous">
+  <style>
+    html, body, .vfull {
+      height: 100%;
+    }
+
+    .gap {
+      height: 15px;
+    }
+
+    .flex-centered {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container has-text-centered vfull flex-centered">
+    <div>
+      <div>
+        <h1 class="title is-2">Renzo Castro Jurado</h1>
+        <h2 class="subtitle is-4">Front-end Developer</h2>
+      </div>
+      <div>
+        <address>Email: <a href="mailto:renzo.vista@gmail.com">renzo.vista@gmail.com</a></address>
+      </div>
+
+      <div class="gap"></div>
+
+      <p class="buttons is-centered">
+        <a class="button" href="https://medium.com/@renzocastro">
+          <span class="icon">
+            <i class="fab fa-medium-m"></i>
+          </span>
+          <span>Medium</span>
+        </a>
+        <a class="button" href="https://twitter.com/renzocastrope">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
+          <span>Twitter</span>
+        </a>
+        <a class="button" href="https://www.linkedin.com/in/renzocastro/">
+          <span class="icon is-small">
+            <i class="fab fa-linkedin-in"></i>
+          </span>
+          <span>LinkedIn</span>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+var debounce=function(d,a,g){var e=void 0;return function(){var h=this,f=arguments,k=g&&!e;clearTimeout(e);e=setTimeout(function(){e=null;g||d.apply(h,f)},a);k&&d.apply(h,f)}};window.requestAnimFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(d){window.setTimeout(d,1E3/60)}}();var c=document.createElement("canvas");document.body.appendChild(c);
+var getContext=function(){var d=c.getContext("2d");c.width=window.innerWidth;c.height=window.innerHeight;var a=[],g=0,e=window.innerWidth/30,h=[.2,.4,.6,.8,1],f=void 0,k=["#a5dff9","#ef5285","#feee7d"];for(f=0;f<e;f++)a.push({x:g,y:Math.round(Math.random()*c.height),width:2*Math.round(10*Math.random()),tSpeed:h[Math.floor(Math.random()*h.length)],color:k[Math.floor(Math.random()*k.length)],angle:0,upDownFactor:.5<=Math.random()?1:-1}),g+=30;(function l(){var b;d.clearRect(0,0,c.width,c.height);for(b=
+0;b<e;b++)d.save(),d.translate(a[b].x+a[b].width/2,a[b].y+a[b].width/2),d.rotate(a[b].angle),d.fillStyle=a[b].color,d.globalAlpha=1,d.fillRect(-a[b].width/2,-a[b].width/2,a[b].width,a[b].width),d.restore(),a[b].y+=a[b].tSpeed*a[b].upDownFactor,a[b].angle+=Math.PI/360,-1===a[b].upDownFactor?0>a[b].y+a[b].width&&(a[b].y=c.height):1===a[b].upDownFactor&&a[b].y>=c.height&&(a[b].y=-a[b].width);window.requestAnimationFrame(l)})()};getContext();window.addEventListener("resize",debounce(getContext,500));
+  </script>
+</body>
+</html>
